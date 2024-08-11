@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calc.css"> <!-- Ensure the correct path to your CSS file -->
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="4"><input class="screen" id="screen" type="text" value="0"></td>
+        </tr>
+        <tr>
+            <th><input type="button" class="c" value="C" id="C" onclick="clear()"></th>
+            <th><input type="button" class="opt" value="/" id="divide" onclick="operator('/')"></th>
+            <th><input type="button" class="opt" value="*" id="multi" onclick="operator('*')"></th>
+            <th><input type="button" class="opt" value="-" id="minus" onclick="operator('-')"></th>
+        </tr>
+        <tr> <!-- Fix: Use <tr> for the row and correct <th> to <td> for button cells -->
+            <td><input type="button" class="number" value="7" id="seven" onclick="number(7)"></td>
+            <td><input type="button" class="number" value="8" id="eight" onclick="number(8)"></td>
+            <td><input type="button" class="number" value="9" id="nine" onclick="number(9)"></td>
+            <td><input type="button" class="opt" value="+" id="plus" onclick="operator('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="4" id="four" onclick="number(4)"></td>
+            <td><input type="button" class="number" value="5" id="five" onclick="number(5)"></td>
+            <td><input type="button" class="number" value="6" id="six" onclick="number(6)"></td>
+            <td rowspan="3"><input class="equal" type="button" value="=" id="equal" onclick="calculateResult()"></td> <!-- Fixed the function name -->
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="1" id="one" onclick="number(1)"></td>
+            <td><input type="button" class="number" value="2" id="two" onclick="number(2)"></td>
+            <td><input type="button" class="number" value="3" id="three" onclick="number(3)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" class="number" value="0" id="zero" onclick="number(0)"></td>
+            <td><input type="button" class="number" value="." id="dot" onclick="addDot()"></td>
+            <td><input class="del" type="button" class="number" value="Del" id="del" onclick="del()"></td> <!-- Ensure the function exists -->
+        </tr>
+    </table>
+
+    <script src="Calc.js" language="javascript"></script> <!-- Fixed the file name to match the convention -->
+</body>
+</html>

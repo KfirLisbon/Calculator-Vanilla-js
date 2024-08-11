@@ -1,0 +1,96 @@
+.number{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.number:hover, .opt:hover, .c:hover, .equal:hover, .del:hover{
+    color: yellow;
+}
+
+.number:active, .opt:active, .c, .equal:active, .del:active{
+    color: orange;
+}
+
+.c{
+    background-color: red;
+    color: black;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.opt{
+    background-color: turquoise;
+    color: black;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.screen{
+    color: rgb(64, 64, 64);
+    background-color: rgb(208, 230, 168);
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    font-family: monospace;
+    font-size: 90px;
+    margin: 30px;
+    text-align: right;
+}
+
+table{
+    background-color: black;
+}
+
+.equal{
+    color: white;
+    background-color: #5d9c3c;
+    width: 90px;
+    height: 270px;
+    border-radius: 15px;
+    font-family: monospace;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+th{
+    margin: 30px;
+}
+
+body{
+    background-image: url(https://th.bing.com/th/id/OIP.avb9nDfw3kq7NOoP0grM4wHaEK?w=289&h=180&c=7&r=0&o=5&pid=1.7) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.del{
+    height: 90px;
+    width: 90px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
